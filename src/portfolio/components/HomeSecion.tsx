@@ -15,7 +15,7 @@ import {
 
 interface NavLink {
     id: string;
-    icon: any; // Add icon property
+    icon: any;
 }
 
 const HomeSection: React.FC = () => {
@@ -74,17 +74,9 @@ const HomeSection: React.FC = () => {
                     <h3>Hello</h3>
                     <h1>I'm &lt; <span>Balaji</span> /&gt;</h1>
                     <h3>
-                        And I'm a <span>Frontend Developer</span>
+                        And I'm a <span>Full Stack Developer</span>
                     </h3>
                     <div className="homeMain-socialMedia">
-                        <a
-                            href="#"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Facebook"
-                        >
-                            <FontAwesomeIcon icon={faFacebook} />
-                        </a>
                         <a
                             href="#"
                             target="_blank"

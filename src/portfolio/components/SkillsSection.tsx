@@ -44,6 +44,7 @@ const SkillsSection: React.FC = () => {
     { name: 'CSS', percentage: 85, className: 'css' },
     { name: 'JavaScript', percentage: 75, className: 'javascript' },
     { name: 'TypeScript', percentage: 60, className: 'typescript' },
+    { name: 'Postgre SQL', percentage: 75, className: 'postgre_SQL' },
   ];
 
   const skillsGroup2: Skill[] = [
@@ -51,6 +52,8 @@ const SkillsSection: React.FC = () => {
     { name: 'Java', percentage: 85, className: 'java' },
     { name: 'MySQL', percentage: 70, className: 'mysql' },
     { name: 'GitHub', percentage: 70, className: 'github' },
+    { name: 'DSA', percentage: 70, className: 'dsa' },
+
   ];
 
   return (
