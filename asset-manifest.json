@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/balajiportfolio/static/css/main.29c423ce.css",
+    "main.js": "/balajiportfolio/static/js/main.9675f354.js",
+    "static/js/453.83234151.chunk.js": "/balajiportfolio/static/js/453.83234151.chunk.js",
+    "index.html": "/balajiportfolio/index.html",
+    "main.29c423ce.css.map": "/balajiportfolio/static/css/main.29c423ce.css.map",
+    "main.9675f354.js.map": "/balajiportfolio/static/js/main.9675f354.js.map",
+    "453.83234151.chunk.js.map": "/balajiportfolio/static/js/453.83234151.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29c423ce.css",
+    "static/js/main.9675f354.js"
+  ]
+}
