@@ -1,0 +1,1226 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --bg-color: black;
+    /* --second-color:;*/
+    --text-color:white; 
+    --main-color:rgb(255, 64, 0);
+    --gain-text:rgb(126, 127, 128);
+
+}
+
+
+
+
+html{
+     font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+section{
+    height: 100vh;
+    padding: 2rem 9% 2rem;
+}
+
+
+
+/* body::-webkit-scrollbar{
+    display: none;
+} */
+
+.header-navbar {
+    position: fixed;
+    left: 0;
+    top: -10%;
+    padding: 1.7rem 7%;
+    z-index: 100;
+    width: 100%;
+    background: var(--bg-color);
+    animation: nav-logo .5s ease-in forwards; 
+}
+
+@keyframes nav-logo {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+
+.header-navbar .logo{
+    font-size: 3.5em;
+    cursor: default;
+    font-weight: 700;
+    color: var(--text-color);
+    letter-spacing: .6em;
+}
+
+
+/* .header-navbar .logo span{
+    color: var(--main-color);
+} */
+
+
+
+/* section of the pages */
+
+.homeMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeMain-left{
+    padding: 1em;
+    /* border: 2px solid white; */
+    opacity: 0;
+    animation: homeLeft .8s ease-in forwards;
+    animation-delay: .5s; 
+}
+
+@keyframes homeLeft {
+    0% {
+        opacity: 0;;
+    }
+    100% {
+        opacity: 1;;
+    }
+}
+
+
+.homeMainLeft-content h3{
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.homeMainLeft-content h3:nth-child(1){
+    position: relative;
+    left: -2.3%;
+    text-transform: uppercase;
+    font-size: 23em;
+    color: var(--gain-text);
+    line-height: .8em;
+}
+
+
+.homeMainLeft-content h1{
+    font-size: 3em;
+}
+
+
+.homeMainLeft-content h1 span{
+    font-size: 1.5em;
+    color: var(--main-color);
+}
+
+
+
+
+.homeMainLeft-content h3 span{
+    font-size: 1.5em;
+    color: var(--main-color);
+    line-height: 1em;
+}
+
+.homeMain-socialMedia a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+
+}
+
+
+.homeMain-socialMedia a:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 3rem var(--main-color);
+}
+
+.homeMainLeft-content .btn{
+    display: inline-flex;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 3rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+
+.homeMainLeft-content .btn:hover{
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+.homeMain-right {
+    position: fixed;
+    right: -10%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid white; */
+    width:5%;
+    height: 100%;
+    z-index: 999999999;
+    animation: homeRight .5s ease-in forwards; 
+}
+
+@keyframes homeRight {
+    0% {
+        right: -10%;
+    }
+    100% {
+        right: 5%;
+    }
+}
+
+.homeMain-navbarLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    width: 100%;
+    height: 50vh;
+    border-radius: 2em;
+    border: 2px solid var(--main-color);
+    background: var(--bg-color);
+
+
+}
+
+.nav-icon{
+    /* border: 2px solid white; */
+    padding: .4em;
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 50%;
+    margin: .2em;
+    color: var(--text-color);
+    background: var(--bg-color);
+    transition: .2s ease;
+
+}
+
+.nav-icon:hover{
+    color: var(--bg-color);
+    background: var(--main-color);
+}
+
+
+.homeMain-navbarLinks li.active .nav-icon {
+    color: var(--bg-color); 
+    background: var(--main-color); 
+    transition: .3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutMain{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.aboutMain div{
+    position: relative;
+    width: 100%;
+    border: 2px solid var(--main-color);
+    height: 75vh;
+    padding: 8em;
+    background: var(--bg-color);
+
+}
+
+
+.aboutMain div::after{
+    position: absolute;
+    content: "";
+    bottom: -2.7%;
+    right: -1%;
+    width: 15em;
+    height: 15em;
+    border: 3px solid var(--main-color);
+    background: var(--main-color);
+    z-index: -1;
+}
+
+.aboutMain div::before {
+    position: absolute;
+    content: "";
+    top: -2.7%;
+    left: -1%;
+    width: 15em;
+    height: 15em;
+    border: 3px solid var(--main-color);
+    /* background: var(--main-color); */
+    z-index: -1;
+}
+
+
+.aboutMain div h3:nth-child(1){
+    font-size: 2em;
+    letter-spacing: .5em;
+    color: var(--main-color);
+}
+
+.aboutMain div h1{
+    font-size: 5em;
+}
+
+
+.aboutMain div p{
+    font-size: 1.5em;
+    line-height: 2em;
+    font-weight: 600;
+    color: var(--gain-text);
+    padding: 1em 0;
+
+}
+
+
+.aboutMain div p span{
+    color: var(--main-color);
+}
+
+
+
+.aboutMain div h3:last-child{
+    font-size: 2em;
+    letter-spacing: .2em;
+    color: var(--main-color);
+    padding: 1em 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skillsMain {
+    width: 100%;
+    height: 100%;
+    padding: 9rem 9% 2rem;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1em 2em;
+    border-radius: 1em;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 3em;
+    color: var(--text-color);
+    font-weight: 800;
+    letter-spacing: 0.5em;
+}
+
+.title-text span {
+    color: var(--main-color);
+}
+
+.mainLeft, .mainRight {
+    position: relative;
+    width: 100%;
+    padding: 1em 4em;
+}
+
+.container .skill-box {
+    width: 100%;
+    margin: 4em 0;
+}
+
+.skill-box .title {
+    display: block;
+    font-size: 1.7em;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.skill-box .skill-bar {
+    height: 1vh;
+    width: 100%;
+    border-radius: 1em;
+    margin-top: 1em;
+    background: rgb(49, 49, 49);
+}
+
+.skill-box .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: 1em;
+    background: var(--main-color);
+    opacity: 0;
+    width: 0%;
+    transition: width 1s ease-out, opacity 0.5s ease-in-out;
+}
+
+.skill-per.css { animation-delay: 0.1s; }
+.skill-per.javascript { animation-delay: 0.2s; }
+.skill-per.typescript { animation-delay: 0.3s; }
+.skill-per.reactjs { animation-delay: 0.3s; }
+.skill-per.java { animation-delay: 0.3s; }
+
+.skill-per .tooltip {
+    position: absolute;
+    right: -1.4em;
+    top: -3em;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--bg-color);
+    padding: 0.4em 0.8em;
+    border-radius: 0.6em;
+    background: var(--main-color);
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -0.3em;
+    height: 1em;
+    width: 1em;
+    z-index: -1;
+    background-color: var(--main-color);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* border: 2px solid white; */
+}
+
+.contactMain-left{
+    /* border: 2px solid white; */
+    position: relative;
+    width: 100%;
+    height: 63.5vh;
+    padding: 60px;
+}
+  
+
+ .contactMainLeft-content h1{
+    font-size: 4em;
+}
+
+.contactMainLeft-content p{
+    font-size: 1.3em;
+    color: rgb(126, 127, 128);
+}
+  
+  .contactInfo-contactForm {
+    position: relative;
+    width: 100%;
+    padding: 60px;
+  }
+  
+  .contactInfo-contactForm::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+  
+  .contactInfo-contactForm::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border: 2px solid #222;
+    background: #252525;
+    border-radius: 3em;
+  }
+
+  
+  .contactInfo-contactForm form {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .contactInfo-contactForm form h2 {
+    color: var(--main-color);
+    font-size: 2em;
+  }
+  
+
+
+  
+  .contactInfo-contactForm form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    letter-spacing: .4em;
+  }
+  
+  .contactInfo-contactForm form .inputBox input,
+  .contactInfo-contactForm form .inputBox textarea {
+    width: 100% !important;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid var(--main-color);
+    color: var(--text-color);
+    outline: none;
+    resize: none;
+  }
+  
+  .contactInfo-contactForm form .inputBox span {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 5px 0;
+    font-size: 1.5em;
+    color: var(--text-color);
+    transition: 0.5s;
+  }
+  
+  .contactInfo-contactForm form .inputBox input:focus~span,
+  .contactInfo-contactForm form .inputBox textarea:focus~span,
+  .contactInfo-contactForm form .inputBox input:valid~span,
+  .contactInfo-contactForm form .inputBox textarea:valid~span {
+    color: var(--main-color);
+    font-size: 1em;
+    transform: translateY(-24px);
+  }
+  
+  .contactInfo-contactForm form .inputBox input[type='submit'] {
+    width: 100%;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: .4em;
+  }
+
+
+
+
+
+  .contactMain-left,
+  .contactInfo-contactForm {
+    opacity: 0;
+    transform: translateX(-50%); 
+    transition: all 0.7s ease-in-out;
+  }
+  
+  .contactInfo-contactForm {
+    transform: translateX(50%); 
+  }
+  
+  .contactMain-left.slide-in-left {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .contactInfo-contactForm.slide-in-right {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+
+
+
+
+
+  /* Global adjustments for smaller screens */
+@media (max-width: 1200px) {
+    section {
+        min-height: 100vh;
+        padding: 2rem 10%;
+    }
+
+
+
+
+    
+.header-navbar {
+
+    padding: 10rem 10%;
+}
+
+
+
+.header-navbar .logo{
+    font-size: 5em;
+    letter-spacing: .5em;
+}
+
+
+
+
+/* section of the pages */
+
+
+
+.homeMainLeft-content h3{
+    font-size: 5em;
+}
+
+
+
+.homeMainLeft-content h1{
+    font-size: 4em;
+}
+
+
+
+
+
+.homeMain-socialMedia a{
+    width: 5rem;
+    height: 5rem;
+
+}
+
+
+.homeMainLeft-content .btn{
+    font-size: 2rem;
+}
+
+.homeMain-right {
+
+    width:10%;
+}
+
+
+.homeMain-navbarLinks {
+
+    font-size: 4em;
+    height: 40vh;
+
+}
+
+.aboutMain div{
+    height: 53vh;
+
+}
+
+
+.aboutMain div::after{
+    right: -2%;
+}
+
+.aboutMain div::before {
+    left: -2%;
+}
+
+
+.aboutMain div h3:nth-child(1){
+    font-size: 3em;
+    letter-spacing: .4em;
+}
+
+.aboutMain div h1{
+    font-size: 4em;
+}
+
+.aboutMain div h3:last-child{
+    padding: .5em 0;
+
+}
+
+.skillsMain {
+    width: 100%;
+    height: 100vh;
+    padding: 35rem 9% 2rem;
+}
+
+
+.container {
+    display: block;
+}
+
+.title-text {
+    font-size: 4em;
+}
+
+
+.contactMain{
+    display: block;
+    /* border: 2px solid white; */
+    padding: 40em 10% 2em;
+}
+
+.contactMain-left{
+    /* border: 2px solid white; */
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 2em;
+}
+  
+
+}
+
+@media (max-width: 992px) {
+    :root {
+        font-size: 55%;
+    }
+    .homeMain {
+        flex-direction: column;
+        padding: 2rem 5%;
+    }
+    .homeMain-left, .homeMain-right {
+        padding: 1rem;
+    }
+    .homeMainLeft-content h3:nth-child(1) {
+        font-size: 15em;
+    }
+    .homeMainLeft-content h1, .homeMainLeft-content h3 span {
+        font-size: 1.2em;
+    }
+    .homeMain-socialMedia a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin: 2rem 1rem 2rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 50%;
+    }
+    .homeMainLeft-content h3:nth-child(1) {
+        font-size: 10em;
+    }
+    .aboutMain div {
+        padding: 6em;
+    }
+    .aboutMain div h1 {
+        font-size: 4em;
+    }
+    .aboutMain div p {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 576px) {
+
+    
+    .header-navbar {
+        padding: 7rem 7%;
+    }
+    
+    
+    .header-navbar .logo{
+        font-size: 4em;
+        letter-spacing: .4em;
+    }
+    
+    
+    /* .header-navbar .logo span{
+        color: var(--main-color);
+    } */
+    
+    
+    
+    /* section of the pages */
+    
+    .homeMain{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid white; */
+    }
+    
+    .homeMain-left{
+        padding: 0em;
+    }
+    
+    
+    .homeMainLeft-content h3{
+        font-size: 1.7em;
+    }
+    
+    .homeMainLeft-content h3:nth-child(1){
+        font-size: 10em;
+    }
+    
+    
+    .homeMainLeft-content h1{
+        font-size: 2em;
+    }
+    
+
+    
+    .homeMainLeft-content .btn{
+        font-size: 1.6rem;
+    }
+    
+    
+    
+    
+    
+    
+    .homeMain-right {
+
+        width:17%;
+        height: 100%;
+
+    }
+    
+    .homeMain-navbarLinks {
+        font-size: 3em;
+        width: 100%;
+        height: 35vh;
+    
+    
+    }
+    
+
+    
+    
+    .aboutMain{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    
+    }
+    
+    .aboutMain div{
+        position: relative;
+        width: 100%;
+        border: 2px solid var(--main-color);
+        height: 65vh;
+        padding: 8em;
+        background: var(--bg-color);
+    
+    }
+    
+    
+    .aboutMain div::after{
+        position: absolute;
+        content: "";
+        bottom: -2.7%;
+        right: -1%;
+        width: 15em;
+        height: 15em;
+        border: 3px solid var(--main-color);
+        background: var(--main-color);
+        z-index: -1;
+    }
+    
+    .aboutMain div::before {
+        position: absolute;
+        content: "";
+        top: -2.7%;
+        left: -1%;
+        width: 15em;
+        height: 15em;
+        border: 3px solid var(--main-color);
+        /* background: var(--main-color); */
+        z-index: -1;
+    }
+    
+    
+    .aboutMain div h3:nth-child(1){
+        font-size: 2em;
+        letter-spacing: .5em;
+        color: var(--main-color);
+    }
+    
+    .aboutMain div h1{
+        font-size: 5em;
+    }
+    
+    
+    .aboutMain div p{
+        font-size: 1.5em;
+        line-height: 2em;
+        font-weight: 600;
+        color: var(--gain-text);
+        padding: 1em 0;
+    
+    }
+    
+    
+    .aboutMain div p span{
+        color: var(--main-color);
+    }
+    
+    
+    
+    .aboutMain div h3:last-child{
+        font-size: 2em;
+        letter-spacing: .2em;
+        color: var(--main-color);
+        padding: 1em 0;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .skillsMain {
+        width: 100%;
+        height: 100vh;
+        padding: 9rem 9% 2rem;
+    }
+    
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1em 2em;
+        border-radius: 1em;
+    }
+    
+    .title-text {
+        text-align: center;
+        font-size: 3em;
+        color: var(--text-color);
+        font-weight: 800;
+        letter-spacing: 0.5em;
+    }
+    
+    .title-text span {
+        color: var(--main-color);
+    }
+    
+    .mainLeft, .mainRight {
+        position: relative;
+        width: 100%;
+        padding: 1em 4em;
+    }
+    
+    .container .skill-box {
+        width: 100%;
+        margin: 4em 0;
+    }
+    
+    .skill-box .title {
+        display: block;
+        font-size: 1.7em;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+    
+    .skill-box .skill-bar {
+        height: 1vh;
+        width: 100%;
+        border-radius: 1em;
+        margin-top: 1em;
+        background: rgb(49, 49, 49);
+    }
+    
+    .skill-box .skill-per {
+        position: relative;
+        display: block;
+        height: 100%;
+        border-radius: 1em;
+        background: var(--main-color);
+        opacity: 0;
+        width: 0%;
+        transition: width 1s ease-out, opacity 0.5s ease-in-out;
+    }
+    
+    .skill-per.css { animation-delay: 0.1s; }
+    .skill-per.javascript { animation-delay: 0.2s; }
+    .skill-per.typescript { animation-delay: 0.3s; }
+    .skill-per.reactjs { animation-delay: 0.3s; }
+    .skill-per.java { animation-delay: 0.3s; }
+    
+    .skill-per .tooltip {
+        position: absolute;
+        right: -1.4em;
+        top: -3em;
+        font-size: 1.2em;
+        font-weight: 700;
+        color: var(--bg-color);
+        padding: 0.4em 0.8em;
+        border-radius: 0.6em;
+        background: var(--main-color);
+        z-index: 1;
+    }
+    
+    .tooltip::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -0.3em;
+        height: 1em;
+        width: 1em;
+        z-index: -1;
+        background-color: var(--main-color);
+        transform: translateX(-50%) rotate(45deg);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .contactMain{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        /* border: 2px solid white; */
+    }
+    
+    .contactMain-left{
+        /* border: 2px solid white; */
+        position: relative;
+        width: 100%;
+        height: 63.5vh;
+        padding: 60px;
+    }
+      
+    
+     .contactMainLeft-content h1{
+        font-size: 4em;
+    }
+    
+    .contactMainLeft-content p{
+        font-size: 1.3em;
+        color: rgb(126, 127, 128);
+    }
+      
+      .contactInfo-contactForm {
+        position: relative;
+        width: 100%;
+        padding: 60px;
+      }
+      
+      .contactInfo-contactForm::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+      }
+      
+      .contactInfo-contactForm::after {
+        content: '';
+        position: absolute;
+        inset: 2px;
+        border: 2px solid #222;
+        background: #252525;
+        border-radius: 3em;
+      }
+    
+      
+      .contactInfo-contactForm form {
+        position: relative;
+        z-index: 10;
+      }
+      
+      .contactInfo-contactForm form h2 {
+        color: var(--main-color);
+        font-size: 2em;
+      }
+      
+    
+    
+      
+      .contactInfo-contactForm form .inputBox {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+      }
+      
+      .contactInfo-contactForm form .inputBox input,
+      .contactInfo-contactForm form .inputBox textarea {
+        width: 100% !important;
+        padding: 5px 0;
+        font-size: 1.1em;
+        margin: 10px 0;
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid var(--main-color);
+        color: var(--text-color);
+        outline: none;
+        resize: none;
+      }
+      
+      .contactInfo-contactForm form .inputBox span {
+        position: absolute;
+        left: 0;
+        pointer-events: none;
+        padding: 5px 0;
+        margin: 5px 0;
+        font-size: 1.5em;
+        color: var(--text-color);
+        transition: 0.5s;
+      }
+      
+      .contactInfo-contactForm form .inputBox input:focus~span,
+      .contactInfo-contactForm form .inputBox textarea:focus~span,
+      .contactInfo-contactForm form .inputBox input:valid~span,
+      .contactInfo-contactForm form .inputBox textarea:valid~span {
+        color: var(--main-color);
+        font-size: 1em;
+        transform: translateY(-24px);
+      }
+      
+      .contactInfo-contactForm form .inputBox input[type='submit'] {
+        width: 100%;
+        background: var(--main-color);
+        color: var(--bg-color);
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 1.2em;
+        font-weight: 700;
+      }
+    
+    
+    
+    
+    
+      .contactMain-left,
+      .contactInfo-contactForm {
+        opacity: 0;
+        transform: translateX(-50%); 
+        transition: all 0.7s ease-in-out;
+      }
+      
+      .contactInfo-contactForm {
+        transform: translateX(50%); 
+      }
+      
+      .contactMain-left.slide-in-left {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      
+      .contactInfo-contactForm.slide-in-right {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      
+    
+}
+
+
+  
+  
