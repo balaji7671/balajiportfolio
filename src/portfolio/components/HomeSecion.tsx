@@ -93,7 +93,7 @@ const HomeSection: React.FC = () => {
                         </a>
                     </div>
                     <a
-                        href=""
+                        href="https://raw.githubusercontent.com/balaji7671/portfolio/main/Balaji_Nakka_Resume.pdf"
                         className="btn"
                         download
                     >
