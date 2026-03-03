@@ -44,11 +44,8 @@ const SkillsSection: React.FC = () => {
 { name: 'CSS', percentage: 85, className: 'css' },
 { name: 'JavaScript', percentage: 75, className: 'javascript' },
 { name: 'ReactJS', percentage: 78, className: 'reactjs' },
-{ name: 'DSA', percentage: 85, className: 'dsa' },
-{ name: 'OOP Concepts', percentage: 80, className: 'oop' },
-{ name: 'DBMS', percentage: 75, className: 'dbms' },
-{ name: 'Operating Systems', percentage: 65, className: 'os' },
-{ name: 'Linux Commands', percentage: 60, className: 'linux' },
+{ name: 'DSA', percentage: 80, className: 'dsa' },
+{ name: 'OOP Concepts', percentage: 80, className: 'oop' }
 
   ];
 
@@ -56,13 +53,9 @@ const SkillsSection: React.FC = () => {
 { name: 'Java', percentage: 85, className: 'java' },
 { name: 'Spring Boot', percentage: 75, className: 'springboot' },
 { name: 'MySQL', percentage: 70, className: 'mysql' },
-{ name: 'REST APIs', percentage: 75, className: 'restapi' },
-{ name: 'Microservices (Basics)', percentage: 60, className: 'microservices' },
-{ name: 'System Design (Basics)', percentage: 60, className: 'systemdesign' },
-{ name: 'Git & GitHub', percentage: 85, className: 'git' },
-{ name: 'AWS Basics (EC2/S3)', percentage: 55, className: 'aws' },
-{ name: 'Maven/Gradle', percentage: 70, className: 'maven' },
-
+{ name: 'PostgreSQL', percentage: 70, className: 'postgresql' },
+{ name: 'GitHub', percentage: 85, className: 'git' },
+{ name: 'Microsoft Azure', percentage: 55, className: 'azure' }
   ];
 
   return (
